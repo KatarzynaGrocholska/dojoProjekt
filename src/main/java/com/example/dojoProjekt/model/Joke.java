@@ -1,4 +1,4 @@
-package com.example.dojoProjekt;
+package com.example.dojoProjekt.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;

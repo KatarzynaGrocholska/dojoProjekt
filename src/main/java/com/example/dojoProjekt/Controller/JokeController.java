@@ -1,6 +1,7 @@
-package com.example.dojoProjekt;
+package com.example.dojoProjekt.Controller;
 
 
+import com.example.dojoProjekt.Service.JokeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
