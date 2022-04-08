@@ -8,13 +8,13 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Joke {
-    private String id;
+
     private String value;
 
     @Override
     public String toString() {
         return "Value{" +
-                "id=" + id +
+
                 ", joke='" + value + '\'' +
                 '}';
     }
