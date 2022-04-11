@@ -9,14 +9,16 @@ import lombok.Setter;
 @Getter
 public class Joke {
 
+    private String created_at;
+    private String icon_url;
+    private String id;
+    private String updated_at;
+    private String url;
     private String value;
 
     @Override
     public String toString() {
-        return "Value{" +
-
-                ", joke='" + value + '\'' +
-                '}';
+        return value;
     }
 
 

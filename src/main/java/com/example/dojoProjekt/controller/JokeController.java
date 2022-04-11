@@ -1,12 +1,13 @@
-package com.example.dojoProjekt.Controller;
+package com.example.dojoProjekt.controller;
 
-
-import com.example.dojoProjekt.Service.JokeService;
+import com.example.dojoProjekt.service.JokeService;
+import com.example.dojoProjekt.model.Joke;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 @CrossOrigin("http://localhost:4200")
 @RestController
 @RequiredArgsConstructor
@@ -16,12 +17,9 @@ public class JokeController {
     private final JokeService jokeService;
 
     @GetMapping(path="/random")
-    public String random(){
+    public Joke random(){
         return jokeService.jokeRandom();
     }
-
-
-
     }
 
 

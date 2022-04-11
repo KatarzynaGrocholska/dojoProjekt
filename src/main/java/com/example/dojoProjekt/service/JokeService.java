@@ -1,5 +1,6 @@
-package com.example.dojoProjekt.Service;
+package com.example.dojoProjekt.service;
 
+import com.example.dojoProjekt.model.Joke;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -8,10 +9,8 @@ public class JokeService {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
-
-    public String jokeRandom() {
+    public Joke jokeRandom() {
         return restTemplate.getForObject(
-                "https://api.chucknorris.io/jokes/random", String.class);
-
+                "https://api.chucknorris.io/jokes/random", Joke.class);
     }
 }
